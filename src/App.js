@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import ButtonWellMade from './components/ButtonWellMade';
+import AppRenderCounter from './components/AppRenderCounter';
+import ButtonShity from './components/ButtonShity';
+import WholeSectionShity from './components/WholeSectionShity'
+import { tool } from './devtools/tool';
 import './App.css';
+
+const Item = props => {
+  return <div className="app-item">I am {props.idx}</div>
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <button onClick={tool}>apply tool</button>
+      <AppRenderCounter />
+      <ButtonWellMade />
+      <ButtonShity />
+      <WholeSectionShity>
+        {[0,1,2,3,4,5].map(item => <Item key={item} idx={item}/>)}
+      </WholeSectionShity>
+    </>
   );
 }
 
