@@ -15,6 +15,7 @@ window.isConsoleOpened = false;
 function App() {
   return (
     <>
+      <div id="messenger" class="messenger">Otworzyłeś/aś już swoje devtoolsy?</div>
       <ApplyTools />
       <ButtonWellMade />
       <ButtonShity />
