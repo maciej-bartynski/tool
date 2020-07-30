@@ -6,6 +6,7 @@ let consoleTimer = null;
 const consoleInformation = () => {
     clearTimeout(consoleTimer)
     consoleTimer = setTimeout(() => {
+        /** DLACZEGO TIMEOUT? sprawdz w TO_SE_PRZECZYTAJCIE.md */
         let counter = 0;
         const infoObject = {};
         for (const key in equalElementsCount) {
