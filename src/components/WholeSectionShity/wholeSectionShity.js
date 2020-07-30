@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, Children, cloneElement } from 'react';
+import React, { useState, Children } from 'react';
 import './wholeSectionShity.css';
 
 const WholeSectionShity = props => {

@@ -1,7 +1,7 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import './buttonShity.css';
 
-const ButtonShity = props => {
+const ButtonShity = () => {
     const [label, setLabel] = useState(0);
 
     const clickHandler = () => {
